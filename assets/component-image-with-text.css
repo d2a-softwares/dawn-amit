@@ -6,6 +6,15 @@
   position: relative;
 }
 
+.grid__item.image-with-text__media-item {
+  order: 2;
+  width: 30%;
+}
+
+.grid__item.image-with-text__text-item {
+  order: 1;
+}
+
 @media screen and (min-width: 750px) {
   .image-with-text__grid--reverse {
     flex-direction: row-reverse;
@@ -85,7 +94,7 @@
   display: flex;
   flex-direction: column;
   height: 100%;
-  justify-content: center;
+  justify-content: start;
   align-self: center;
   padding: 4rem calc(4rem / var(--font-body-scale)) 5rem;
   position: relative;
@@ -332,12 +341,12 @@
 
 @media screen and (min-width: 990px) {
   .image-with-text__content {
-    padding: 6rem 7rem 7rem;
+    padding: 0 1rem 0;
   }
 }
 
 .image-with-text__content > * + * {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .image-with-text__content > .image-with-text__text:empty ~ a {
@@ -361,18 +370,40 @@
 
 .image-with-text__content .image-with-text__text + .button {
   margin-top: 3rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.image-with-text__content .image-with-text__text + .button .icon {
+  display: flex;
+  align-items: center;
 }
 
 .image-with-text__heading {
   margin-bottom: 0;
+  font-size: 55px;
 }
 
 .image-with-text__text p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 26px;
+  line-height: 1.5;
+  letter-spacing: normal;
 }
 
 @media screen and (max-width: 749px) {
+  .image-with-text__heading {
+    font-size: 42px;
+    font-weight: 600;
+  }
+
+  .image-with-text__text p {
+    font-size: 20px;
+  }
   .collapse-padding .image-with-text__grid .image-with-text__content {
     padding-left: 0;
     padding-right: 0;

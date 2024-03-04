@@ -95,7 +95,15 @@
                       class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}"
                       {{ block.shopify_attributes }}
                     >
-                      {{ block.settings.button_label | escape }}
+                      <span>
+                        {{ block.settings.button_label | escape }}
+                      </span>
+
+                      <span class="icon" arai-hidden>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
+                          <path d="M1.50012 1.16665L7.33346 6.99999L1.50012 12.8333" stroke="#003D2C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                      </span>
                     </a>
                   {%- endif -%}
               {%- endcase -%}
@@ -112,10 +120,7 @@
   "name": "t:sections.image-with-text.name",
   "class": "section",
   "disabled_on": {
-    "groups": [
-      "header",
-      "footer"
-    ]
+    "groups": ["header", "footer"]
   },
   "settings": [
     {
@@ -245,13 +250,13 @@
       "type": "color_scheme",
       "id": "section_color_scheme",
       "label": "t:sections.all.colors.label",
-      "default": "scheme-1"
+      "default": "scheme-hero"
     },
     {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.multirow.settings.container_color_scheme.label",
-      "default": "scheme-1"
+      "default": "scheme-hero"
     },
     {
       "type": "header",
@@ -309,21 +314,21 @@
       "type": "range",
       "id": "padding_top",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_top",
-      "default": 36
+      "default": 148
     },
     {
       "type": "range",
       "id": "padding_bottom",
       "min": 0,
-      "max": 100,
+      "max": 200,
       "step": 4,
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
-      "default": 36
+      "default": 0
     }
   ],
   "blocks": [
@@ -443,6 +448,11 @@
       "name": "t:sections.image-with-text.blocks.button.name",
       "limit": 1,
       "settings": [
+        {
+          "type": "image_picker",
+          "id": "button_icon",
+          "label": "t:sections.image-with-text.blocks.button.button_icon.label"
+        },
         {
           "type": "text",
           "id": "button_label",
