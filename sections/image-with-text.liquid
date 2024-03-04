@@ -99,11 +99,7 @@
                         {{ block.settings.button_label | escape }}
                       </span>
 
-                      <span class="icon" arai-hidden>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="14" viewBox="0 0 9 14" fill="none">
-                          <path d="M1.50012 1.16665L7.33346 6.99999L1.50012 12.8333" stroke="#003D2C" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                      </span>
+                      <span class="icon-wrap">&nbsp;{% render 'icon-chevron-right' %}</span>
                     </a>
                   {%- endif -%}
               {%- endcase -%}
