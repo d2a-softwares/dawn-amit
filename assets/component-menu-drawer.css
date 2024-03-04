@@ -141,7 +141,7 @@ details[open].menu-opening > .menu-drawer__submenu {
   right: 3rem;
 }
 
-.menu-drawer__menu-item--active,
+/* .menu-drawer__menu-item--active, */
 .menu-drawer__menu-item:focus,
 .menu-drawer__close-button:focus,
 .menu-drawer__menu-item:hover,
@@ -253,7 +253,7 @@ details[open].menu-opening > .menu-drawer__submenu {
 
 .menu-drawer .list-social {
   justify-content: flex-start;
-  margin-left: -1.25rem
+  margin-left: -1.25rem;
 }
 
 .menu-drawer .list-social:empty {
