@@ -2341,7 +2341,10 @@
             "label": "Thumbnails"
           },
           "options__4": {
-            "label": "Thumbnail carousel"
+            "label": "Thumbnail Carousel"
+          },
+          "options__5": {
+            "label": "Left Thumbnail Carousel"
           }
         },
         "constrain_to_viewport": {
