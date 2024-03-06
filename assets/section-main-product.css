@@ -1055,13 +1055,19 @@ a.product__text {
   aspect-ratio: 7 / 8;
 }
 
-.product--left_thumbnail_slider slider-component:first-of-type {
+.product--left_thumbnail_slider slider-component:first-of-type,
+.product--right_thumbnail_slider slider-component:first-of-type {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.product--left_thumbnail_slider slider-component:first-of-type {
   order: 2;
 }
 
 .product--right_thumbnail_slider slider-component:first-of-type {
-  width: 100%;
   order: 1;
 }
 
