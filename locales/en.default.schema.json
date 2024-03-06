@@ -2345,6 +2345,9 @@
           },
           "options__5": {
             "label": "Left Thumbnail Carousel"
+          },
+          "options__6": {
+            "label": "Right Thumbnail Carousel"
           }
         },
         "constrain_to_viewport": {
