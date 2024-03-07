@@ -60,7 +60,7 @@
       </a>
     {%- endif -%}
     <div class="product__media__slider-container">
-      {%- unless is_duplicate -%}
+      {%- if is_duplicate == false or hide_mobile_slider -%}
         <button
           type="button"
           class="slider-button slider-button--prev"
@@ -69,7 +69,7 @@
         >
           {% render 'icon-caret' %}
         </button>
-      {%- endunless -%}
+      {%- endif -%}
       <ul
         id="Slider-Gallery-{{ section.id }}{{ id_append }}"
         class="product__media-list contains-media grid grid--peek list-unstyled slider slider--mobile"
@@ -131,7 +131,7 @@
           {%- endunless -%}
         {%- endfor -%}
       </ul>
-      {%- unless is_duplicate -%}
+      {%- if is_duplicate == false or hide_mobile_slider -%}
         <button
           type="button"
           class="slider-button slider-button--next"
@@ -140,7 +140,7 @@
         >
           {% render 'icon-caret' %}
         </button>
-      {% endunless %}
+      {% endif %}
     </div>
     {%- unless is_duplicate or hide_mobile_slider -%}
       <div class="slider-buttons no-js-hidden quick-add-hidden{% if hide_mobile_slider %} small-hide{% endif %}">
