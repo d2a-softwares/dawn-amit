@@ -1090,12 +1090,17 @@ a.product__text {
   .product--right_thumbnail_slider .product__media-item:not(.is-active) {
     display: none;
   }
+
   .product--left_thumbnail_slider slider-component:first-of-type,
   .product--right_thumbnail_slider slider-component:first-of-type {
     width: 100%;
   }
 
   .product__media-list .slider-buttons {
+    display: none;
+  }
+
+  .product--thumbnail_slider slider-component:first-of-type .slider-button {
     display: none;
   }
 }
