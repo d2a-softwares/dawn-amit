@@ -4,17 +4,6 @@
     "Default": {
       "logo_width": 90,
       "color_schemes": {
-        "scheme-hero": {
-          "settings": {
-            "background": "#005e46",
-            "background_gradient": "",
-            "text": "#fff",
-            "button": "#fff",
-            "button_label": "#003d2c",
-            "secondary_button_label": "#121212",
-            "shadow": "#121212"
-          }
-        },
         "scheme-1": {
           "settings": {
             "background": "#FFFFFF",
@@ -67,6 +56,17 @@
             "button": "#FFFFFF",
             "button_label": "#334FB4",
             "secondary_button_label": "#FFFFFF",
+            "shadow": "#121212"
+          }
+        },
+        "scheme-hero": {
+          "settings": {
+            "background": "#005e46",
+            "background_gradient": "",
+            "text": "#fff",
+            "button": "#fff",
+            "button_label": "#003d2c",
+            "secondary_button_label": "#121212",
             "shadow": "#121212"
           }
         }
